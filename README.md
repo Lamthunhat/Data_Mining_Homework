@@ -8,10 +8,11 @@ Repository chứa các bài tập và đồ án môn **Khai phá dữ liệu (Da
 
 Thư mục: [**`DataMining_Project/`**](DataMining_Project/)
 
-Cài đặt và so sánh thực nghiệm hiệu năng của ba thuật toán kinh điển:
+Cài đặt và so sánh thực nghiệm hiệu năng của các thuật toán:
 1. **Apriori** [AS94b] (Agrawal & Srikant, 1994)
 2. **Eclat** [Zak00] (Mohammed J. Zaki, 2000) - Khai phá dữ liệu dọc
-3. **FP-growth** [HPY00] (Han, Pei, Yin, 2000) - Cấu trúc cây tiền tố nén FP-Tree
+3. **FP-growth** [HPY00] (Han, Pei, Yin, 2000) - Cấu trúc cây tiền tố nén Standard FP-Tree
+4. **Compact FP-growth** (Câu 12.b) - Tối ưu hóa FP-Tree kết hợp mảng và con trỏ (Compressed Radix-Path FP-Tree), giảm tới **52.92%** số lượng nút trên dữ liệu thưa!
 
 ---
 

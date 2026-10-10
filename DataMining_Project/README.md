@@ -19,11 +19,13 @@ DataMining_Project/
 ├── include/                # Header files
 │   ├── Apriori.h
 │   ├── FPGrowth.h
+│   ├── CompactFPGrowth.h   # Tối ưu hóa FP-Tree kết hợp mảng và con trỏ (Câu 12.b)
 │   ├── Eclat.h
 │   └── DataUtils.h
 ├── src/                    # Source files
 │   ├── Apriori.cpp
 │   ├── FPGrowth.cpp
+│   ├── CompactFPGrowth.cpp # Cài đặt Compact FP-Tree
 │   ├── Eclat.cpp
 │   ├── DataUtils.cpp
 │   └── main.cpp

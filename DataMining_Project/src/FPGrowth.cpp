@@ -188,6 +188,8 @@ AlgorithmResult FPGrowth::run(const Database& db) {
         }
     }
 
+    globalNodeCount = globalTree.nodePool.size();
+
     // Step 4: Mine global FP-tree
     Itemset prefix;
     mineFPTree(globalTree, prefix);

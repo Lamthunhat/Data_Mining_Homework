@@ -13,10 +13,14 @@ public:
     // Run the FP-Growth algorithm using FP-Tree and conditional pattern bases
     AlgorithmResult run(const Database& db);
 
+    // Get total nodes created in global FP-Tree
+    size_t getGlobalNodeCount() const { return globalNodeCount; }
+
 private:
     int minSupCount;
     bool collectItemsets;
     size_t totalFrequentCount;
+    size_t globalNodeCount = 0;
     std::vector<FrequentItemset> resultItemsets;
 
     struct FPNode {

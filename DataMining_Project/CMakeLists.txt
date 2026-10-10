@@ -25,6 +25,7 @@ set(SOURCES
     src/Apriori.cpp
     src/Eclat.cpp
     src/FPGrowth.cpp
+    src/CompactFPGrowth.cpp
     src/main.cpp
 )
 
