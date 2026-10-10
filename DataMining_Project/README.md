@@ -13,9 +13,9 @@ Dự án cài đặt và thực nghiệm so sánh 3 thuật toán khai phá tậ
 DataMining_Project/
 ├── bin/                    # Chứa file thực thi DataMining_Project.exe
 ├── data/                   # Chứa các tập dữ liệu thực nghiệm
-│   ├── chess.dat           # Dữ liệu rất đặc (3,196 tx, mật độ 49.33%)
-│   ├── mushroom.dat        # Dữ liệu đặc vừa (8,416 tx, mật độ 19.33%)
-│   └── retail.dat          # Dữ liệu rất thưa (88,162 tx, mật độ 0.06%)
+│   ├── chess.dat           # Dữ liệu rất đặc (3,196 giao dịch, mật độ 49.33%)
+│   ├── mushroom.dat        # Dữ liệu đặc vừa (8,416 giao dịch, mật độ 19.33%)
+│   └── retail.dat          # Dữ liệu rất thưa (88,162 giao dịch, mật độ 0.06%)
 ├── include/                # Header files
 │   ├── Apriori.h
 │   ├── FPGrowth.h
@@ -37,7 +37,7 @@ DataMining_Project/
 ## 2. Hướng Dẫn Biên Dịch (Build)
 
 ### Cách 1: Sử dụng CMake (Khuyên dùng)
-Yêu cầu: Máy đã cài đặt CMake (>= 3.20) và một trình biên dịch C++17 (MSVC hoặc MinGW g++).
+Yêu cầu: Máy đã cài đặt CMake (>= 3.20) và trình biên dịch C++17 (MSVC hoặc MinGW g++).
 
 ```bash
 # Di chuyển vào thư mục dự án
@@ -46,7 +46,7 @@ cd DataMining_Project
 # Cấu hình dự án với CMake
 cmake -B build -S .
 
-# Biên dịch Release (tối ưu hóa tốc độ cao nhất /O2 hoặc -O3)
+# Biên dịch bản Release tối ưu hóa tốc độ
 cmake --build build --config Release
 ```
 Sau khi biên dịch, file thực thi sẽ được xuất trực tiếp vào thư mục `bin/DataMining_Project.exe`.
@@ -97,4 +97,4 @@ Cú pháp lệnh:
 Vui lòng đọc file [`REPORT.md`](REPORT.md) để xem chi tiết:
 - Phân tích chi tiết độ phức tạp thuật toán và cơ chế nén/duyệt.
 - Bảng đo đạc thời gian (ms), bộ nhớ (MB), số mẫu trên từng tập dữ liệu.
-- Phân tích 4 tình huống: Mật độ dữ liệu (Dense vs Sparse), Kích thước dữ liệu ($|D|$ và $|I|$), Ngưỡng độ hỗ trợ ($\text{min\_sup}$), và Phân bố độ dài giao dịch.
+- Phân tích 4 tình huống: Mật độ dữ liệu (Dense vs Sparse), Kích thước dữ liệu (Số giao dịch và số mục), Ngưỡng độ hỗ trợ (`min_sup`), và Phân bố độ dài giao dịch.
