@@ -1,0 +1,20 @@
+# Build and binary outputs
+build/
+**/build/
+bin/*.exe
+**/bin/*.exe
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.idb
+
+# IDE and Editor files
+.vs/
+**/.vs/
+*.sln.docstates
+.vscode/*.log
+
+# Temporary test scripts
+test_cmake/
+scratch/
